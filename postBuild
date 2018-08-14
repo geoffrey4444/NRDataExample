@@ -9,3 +9,13 @@ make
 make install
 popd
 echo "Nano installed successfully."
+
+#And install zip
+pushd .temp
+wget https://downloads.sourceforge.net/infozip/zip30.tar.gz
+tar -zvxf zip30.tar.gz
+cd zip30
+make -f unix/Makefile generic_gcc
+make prefix=$HOME/.local MANDIR=$HOME/.local/man -f unix/Makefile install
+popd
+echo "Zip installed successfully"
