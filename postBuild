@@ -19,3 +19,6 @@ make -f unix/Makefile generic_gcc
 make prefix=$HOME/.local MANDIR=$HOME/.local/man -f unix/Makefile install
 popd
 echo "Zip installed successfully"
+
+#And install mpi4py
+conda install -y mpi4py
