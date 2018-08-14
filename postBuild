@@ -20,5 +20,6 @@ make prefix=$HOME/.local MANDIR=$HOME/.local/man -f unix/Makefile install
 popd
 echo "Zip installed successfully"
 
-#And install mpi4py
-conda install -y mpi4py
+#And install mpi4py and numpy/scipy/matplotlib
+conda install -y mpi4py numpy scipy matplotlib
+
